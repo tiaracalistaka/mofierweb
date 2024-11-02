@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'swiper/swiper-bundle.css';
+@import url('sentient.css');
+
+
+:root {
+  --primary: #C9635F;
+  --secondary: #424428;
+  --dark: #100909;
+  --light: #f9f9f9;
+  --red: #892c27;
+  --white: #ffffff;
+  --radius-xs: 1px;
+
+  --space-xs: 2px;
+  --space-sm: 4px;
+  --space-md: 6px;
+  --space-lg: 10px;
+  --space-xl: 14px;
+  --space-2xl: 16px;
+  --space-3xl: 18px;
+  --space-4xl: 20px;
+  --space-5xl: 22px;
+  --space-6xl: 24px;
+  }
+
+.container-xs {
+    @apply w-full mx-auto max-w-[1356px];
+}
+
+.swiper-pagination-bullet {
+  background-color: #d3d3d3; /* Warna bullet default */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary); /* Gunakan warna primary */
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sentient-Variable';
+}
+
+* {
+  box-sizing: border-box;
+  line-height: normal;
+  font-family: inherit;
+  margin: unset;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  margin-inline: unset !important;
+  padding: 0;
+  list-style: none;
+}
+
+.slidermofier .alice-carousel__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: auto;
+  bottom: 23px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+.alice-carousel__dots-item {
+  cursor: pointer;
+
+}
+
