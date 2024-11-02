@@ -13,7 +13,7 @@ const HomePage: React.FC = () => {
       <HeroSlider />
       {/* Produk Kami Section */}
       <section className="text-center mt-10 mb-16">
-        <h2 className="text-3xl font-bold text-primary mb-10">Produk Kami</h2>
+        <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-primary mb-10">Produk Kami</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Card 1 */}
           <div className="relative overflow-hidden group">
@@ -58,7 +58,7 @@ const HomePage: React.FC = () => {
 
 
       <section className="text-center mt-16 mb-20">
-        <h2 className="text-3xl font-bold text-primary mb-10">Artikel</h2>
+        <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-primary mb-10">Artikel</h2>
         <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 gap-20 max-w-3xl">
           {/* Article 1 */}
           <div className="relative group overflow-hidden shadow-lg max-w-sm mx-auto">
@@ -99,7 +99,7 @@ const HomePage: React.FC = () => {
 
       {/* Galeri Section */}
       <section className="relative text-center py-16">
-          <h2 className="text-primary text-3xl font-semibold mb-6">Galeri</h2>
+          <h2 className="text-primary text-lg sm:text-2xl md:text-3xl font-semibold mb-6">Galeri</h2>
           
           
           {/* Grid Gambar Galeri */}

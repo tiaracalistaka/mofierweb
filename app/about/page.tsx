@@ -65,7 +65,7 @@ const AboutPage: React.FC = () => {
 
         {/* Hubungi Kami Section */}
         <section className="relative text-center py-12 sm:py-16">
-          <h2 className="text-primary text-center sm:text-left text-base sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-4 sm:mb-6">Hubungi Kami</h2>
+          <h2 className="text-primary text-center text-base sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-4 sm:mb-6">Hubungi Kami</h2>
           
           {/* Grid Gambar Hubungi Kami */}
           <div className="flex justify-center mb-6 px-8 sm:px-10 md:px-10 lg:px-40">
