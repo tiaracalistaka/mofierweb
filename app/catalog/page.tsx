@@ -8,25 +8,29 @@ const CatalogPage: React.FC = () => {
     <div className="w-full bg-white">
       <Header />
 
-      <main className="container-xs mt-8 py-16 space-y-16">
+      <main className="max-w-screen-lg mx-auto mt-3 py-8 space-y-8 px-4">
         {/* Rekomendasi Section */}
-        <section className="text-center space-y-4 md:space-y-6">
-          <h1 className="text-2xl sm:text-2xl md:text-4xl font-semibold text-primary">Rekomendasi</h1>
+        <section className="text-center space-y-3 sm:pl-20">
+          <h1 className="text-sm mb-1 sm:text-xl md:text-2xl lg:text-3xl font-semibold text-primary mt-10">
+            Rekomendasi
+          </h1>
           
-          <div className="flex flex-col md:flex-row items-center md:justify-between space-y-6 md:space-y-10 md:space-x-10 px-6 md:pl-100 md:px-20">
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 ">
             {/* Main Image */}
             <img 
               src="/Rekomendasi.png" 
               alt="Main Image" 
-              className="w-1/4 sm:w-3/4 md:w-1/2 h-auto object-cover" 
+              className="w-3/4 sm:w-56 md:w-1/2 h-auto object-cover " 
             />
 
             {/* Collection Details */}
-            <div className="space-y-4 text-center md:text-left md:w-1/2">
-              <h2 className="text-lg sm:text-2xl md:text-3xl font-semibold text-primary">Larasati Collection</h2>
+            <div className="space-y-2 sm:space-y-4 text-center sm:text-left sm:w-1/2">
+              <h2 className="text-sm sm:text-xl md:text-2xl lg:text-3xl font-semibold text-primary">
+                Larasati Collection
+              </h2>
               <a 
                 href="https://shopee.co.id/mofier.official"
-                className="inline-block px-3 py-1 sm:px-4 sm:py-2 bg-white border border-primary text-primary font-semibold transition duration-300 hover:bg-primary hover:text-white text-sm sm:text-base"
+                className="inline-block px-2 py-2 sm:px-4 sm:py-2 border border-primary text-primary font-semibold transition duration-300 hover:bg-primary hover:text-white text-xs sm:text-sm md:text-base"
               >
                 BELANJA SEKARANG
               </a>
@@ -35,7 +39,7 @@ const CatalogPage: React.FC = () => {
         </section>
 
         {/* Products Section */}
-        <section className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-1 md:grid-cols-4 md:gap-6 justify-items-center">
+        <section className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8">
           <ProductCard image="/Ring.png" title="Larasati Ring" />
           <ProductCard image="/Neklace.png" title="Larasati Necklace" />
           <ProductCard image="/Bracelet.png" title="Larasati Bracelet" />
