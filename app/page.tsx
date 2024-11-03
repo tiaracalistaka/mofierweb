@@ -13,14 +13,14 @@ const HomePage: React.FC = () => {
       <HeroSlider />
       {/* Produk Kami Section */}
       <section className="text-center mt-10 mb-16">
-        <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-primary mb-10">Produk Kami</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-primary mb-3 md:mb-6">Produk Kami</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 lg:gap-8 px-8">
           {/* Card 1 */}
-          <div className="relative overflow-hidden group">
+          <div className="relative overflow-hidden group ">
             <img 
               src="Ring.png" 
               alt="Ring" 
-              className="w-full md:w-3/4 h-auto mx-auto object-cover" 
+              className="h-[420px] w-[400px] sm:w-full md:w-3/4 sm:h-auto mx-auto object-cover" 
             />
             <div className="absolute inset-0 bg-black bg-opacity-30 md:w-3/4 mx-auto flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
               <span className="text-xl font-semibold">Larasati Ring</span>
@@ -57,18 +57,18 @@ const HomePage: React.FC = () => {
       </section>
 
 
-      <section className="text-center mt-16 mb-20">
-        <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-primary mb-10">Artikel</h2>
+      <section className="text-center mt-10 mb-3 sm:px-10 sm:mb-10 lg:mb-20">
+        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-primary mb-3 md:mb-6">Artikel</h2>
         <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 gap-20 max-w-3xl">
           {/* Article 1 */}
           <div className="relative group overflow-hidden shadow-lg max-w-sm mx-auto">
             <img 
               src="Artikel1.png" 
               alt="Artikel 1" 
-              className="w-full h-[450px] object-cover transition-transform duration-300 group-hover:scale-105" 
+              className="sm:w-[250px] sm:h-[350px] lg:w-full lg:h-[450px] object-cover transition-transform duration-300 group-hover:scale-105" 
             />
             <div className="absolute bottom-0 left-0 right-0 bg-primary bg-opacity-80 p-4 text-white">
-              <p className="text-md font-semibold mb-2">
+              <p className="text-sm sm:text-md font-semibold mb-2">
                 Mofier Berpartisipasi di ITB Integrated Career Days 2024: Perhiasan Daur Ulang Berbasis Budaya yang Menginspirasi
               </p>
               <a href="/artikel1" className="inline-block px-4 py-2 bg-white text-primary font-semibold hover:bg-secondary hover:text-white transition">
@@ -82,10 +82,10 @@ const HomePage: React.FC = () => {
             <img 
               src="Artikel2.png" 
               alt="Artikel 2" 
-              className="w-full h-[450px] object-cover transition-transform duration-300 group-hover:scale-105" 
+              className="sm:w-[250px] sm:h-[350px] lg:w-full lg:h-[450px] object-cover transition-transform duration-300 group-hover:scale-105" 
             />
             <div className="absolute bottom-0 left-0 right-0 bg-primary bg-opacity-80 p-4 text-white">
-              <p className="text-md font-semibold mb-2">
+              <p className="text-sm sm:text-md font-semibold mb-2">
                 Kolaborasi Mofier dan Superkids: Edukasi Pengolahan Sampah Plastik di SuperKids Earth Project
               </p>
               <a href="/artikel2" className="inline-block px-4 py-2 bg-white text-primary font-semibold hover:bg-secondary hover:text-white transition">
@@ -98,12 +98,12 @@ const HomePage: React.FC = () => {
 
 
       {/* Galeri Section */}
-      <section className="relative text-center py-16">
-          <h2 className="text-primary text-lg sm:text-2xl md:text-3xl font-semibold mb-6">Galeri</h2>
+      <section className="relative text-center sm:py-10">
+          <h2 className="text-primary text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-3 md:mb-6">Galeri</h2>
           
           
           {/* Grid Gambar Galeri */}
-          <div className="flex justify-center pl-40 md:pl-40 pr-40 md:pr-40">
+          <div className="flex justify-center px-10 md:pl-40 md:pr-40">
             <img src="Galeri.png" alt="Galeri" className="w-full h-100" />
             
           </div>

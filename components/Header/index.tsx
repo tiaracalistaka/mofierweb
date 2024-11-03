@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         </Link>
 
         {/* Desktop Nav Links */}
-        <nav className="hidden sm:flex gap-10">
+        <nav className="hidden sm:flex gap-10 ">
           <a href="/catalog" className="text-primary font-medium hover:text-secondary">Katalog</a>
           <a href="/artikel" className="text-primary font-medium hover:text-secondary">Artikel</a>
           <a href="/about" className="text-primary font-medium hover:text-secondary">Tentang</a>
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu Icon */}
         <button 
-          className="sm:hidden text-primary text-2xl" 
+          className="sm:hidden text-primary text-2xl lg:text-3xl" 
           onClick={toggleSidebar}
           aria-label="Toggle sidebar"
         >
