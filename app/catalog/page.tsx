@@ -11,7 +11,7 @@ const CatalogPage: React.FC = () => {
       <main className="max-w-screen-lg mx-auto mt-3 py-8 space-y-8 px-4">
         {/* Rekomendasi Section */}
         <section className="text-center space-y-3 sm:pl-20">
-          <h1 className="text-sm mb-1 sm:text-xl md:text-2xl lg:text-3xl font-semibold text-primary mt-10">
+          <h1 className="text-sm mb-1 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-primary mt-10">
             Rekomendasi
           </h1>
           
@@ -25,7 +25,7 @@ const CatalogPage: React.FC = () => {
 
             {/* Collection Details */}
             <div className="space-y-2 sm:space-y-4 text-center sm:text-left sm:w-1/2">
-              <h2 className="text-sm sm:text-xl md:text-2xl lg:text-3xl font-semibold text-primary">
+              <h2 className="text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-primary">
                 Larasati Collection
               </h2>
               <a 

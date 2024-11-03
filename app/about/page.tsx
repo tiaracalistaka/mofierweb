@@ -18,8 +18,8 @@ const AboutPage: React.FC = () => {
 
           {/* Tentang - kanan atas */}
           <div className="bg-secondary text-white p-6 sm:p-8 flex flex-col justify-center relative ">
-            <h2 className="text-center sm:text-left text-base sm:text-xl md:text-2xl lg:text-3xl md:font-semibold font-medium mb-1 sm:mb-2 md:mx-2 lg:mx-4 sm:mx-0.5">Tentang</h2>
-            <p className="text-xs sm:text-sm md:text-base lg:text-xl font-light text-justify md:mx-2 lg:mx-4 sm:mx-0.5">
+            <h2 className="text-center sm:text-left text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl md:font-semibold font-medium mb-1 sm:mb-2 md:mx-2 lg:mx-4 sm:mx-0.5">Tentang</h2>
+            <p className="text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-light text-justify md:mx-2 lg:mx-4 sm:mx-0.5">
               Merayakan warisan budaya Indonesia dengan keberlanjutan, menciptakan perhiasan unik dari bahan daur ulang yang memancarkan keindahan dan makna.
             </p>
             <img 
@@ -31,8 +31,8 @@ const AboutPage: React.FC = () => {
 
           {/* Perjalanan Mofier - kiri bawah */}
           <div className="p-6 sm:p-8 bg-white flex flex-col justify-center text-secondary md:mx-2 lg:mx-4 sm:mx-0.5">
-            <h2 className="text-primary text-center sm:text-left text-base sm:text-xl md:text-2xl lg:text-3xl md:font-semibold font-medium mb-1 sm:mb-3">Perjalanan Mofier</h2>
-            <p className="leading-relaxed text-xs sm:text-sm md:text-base lg:text-xl text-justify">
+            <h2 className="text-primary text-center sm:text-left text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl md:font-semibold font-medium mb-1 sm:mb-3">Perjalanan Mofier</h2>
+            <p className="leading-relaxed text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl text-justify">
               Dahulu, <span className="font-bold">Mofier</span> hanyalah sebuah ide sederhana—
               Mimpi anak muda untuk memberikan sesuatu yang lebih berarti dari sekadar perhiasan. Mimpi ini lahir dari keinginan untuk melestarikan warisan budaya Indonesia, sebuah upaya untuk menjaga keindahan dan makna yang terkandung dalam tradisi Nusantara.
               <br /><br />
@@ -54,8 +54,8 @@ const AboutPage: React.FC = () => {
             <img src="About2.png" alt="About Image 3" className="w-full h-auto sm:h-full object-cover" />
           </div>
           <div className="p-6 sm:p-8 bg-white flex flex-col justify-center text-secondary md:mx-2 lg:mx-4 sm:mx-0.5">
-            <h2 className="text-primary text-center sm:text-left text-base sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-2 sm:mb-3">Visi dan Misi</h2>
-            <p className="leading-relaxed text-xs sm:text-sm md:text-base lg:text-xl text-justify">
+            <h2 className="text-primary text-center sm:text-left text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-2 sm:mb-3">Visi dan Misi</h2>
+            <p className="leading-relaxed text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl text-justify">
               <span className="font-bold">Mofier</span> adalah brand perhiasan Indonesia yang berkomitmen menjadi pelopor dalam industri perhiasan berkelanjutan. Dengan mengintegrasikan budaya dan keahlian tradisional Indonesia, <span className="font-bold">Mofier</span> menciptakan perhiasan yang ramah lingkungan dan memberdayakan pengrajin lokal. Mofier memiliki tujuan untuk meningkatkan kepercayaan diri pelanggan melalui karya yang merayakan warisan Indonesia.
               <br /><br />
               <span className="font-bold">Mofier</span> hadir sebagai merek perhiasan Indonesia yang mengusung suara elegan, peduli lingkungan, dan dukungan positif. Dengan karakteristik yang memadukan keanggunan, tanggung jawab, dan semangat positif, <span className="font-bold">Mofier</span> terinspirasi untuk mendorong pilihan hidup yang sadar dan modern dalam gaya hidup yang berkelanjutan. Kami dapat menyampaikan pesan-pesan dengan gaya yang lembut dan membangun untuk kesejahteraan kehidupan yang penuh kesadaran.
@@ -65,7 +65,7 @@ const AboutPage: React.FC = () => {
 
         {/* Hubungi Kami Section */}
         <section className="relative text-center py-12 sm:py-16">
-          <h2 className="text-primary text-center text-base sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-4 sm:mb-6">Hubungi Kami</h2>
+          <h2 className="text-primary text-center text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 sm:mb-6">Hubungi Kami</h2>
           
           {/* Grid Gambar Hubungi Kami */}
           <div className="flex justify-center mb-6 px-8 sm:px-10 md:px-10 lg:px-40">
