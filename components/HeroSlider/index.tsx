@@ -10,7 +10,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 
 const HeroSlider: React.FC = () => {
   return (
-    <div className="relative h-[50vh] sm:h-[60vh] md:h-[60vh] w-full overflow-hidden">
+    <div className="relative h-[50vh] sm:h-[60vh] md:h-[60vh] lg:h-auto w-full overflow-hidden">
       {/* Bagian teks dan tombol yang tetap di atas */}
       <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-start sm:justify-center items-start p-6 sm:p-10 z-10 mt-10 sm:mt-0">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white ml-5 sm:ml-10 md:ml-20 lg:ml-40">
