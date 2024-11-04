@@ -50,7 +50,7 @@ const HomePage: React.FC = () => {
           </div>
         </div>
         <Link href="/catalog">
-          <button className="px-4 py-2 mt-6 border border-primary text-primary font-semibold hover:bg-primary hover:text-white transition">
+          <button className="px-4 py-2 mt-10 border border-primary text-primary font-semibold hover:bg-primary hover:text-white transition">
             LIHAT SEMUA
           </button>
         </Link>
