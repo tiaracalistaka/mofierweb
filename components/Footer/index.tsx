@@ -23,13 +23,10 @@ export default function Footer({ ...props }: Props) {
         {/* Bagian Informasi Kontak */}
         <div className="flex flex-col items-start gap-1 ml-8 lg:ml-15">
           <Text as="p" className="text-[11px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-primary">
-            WhatsApp : +62 859 9999 999
+            Instagram : @mofier.official
           </Text>
           <Text as="p" className="text-[11px] xs: sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-primary">
-            Email : hello@com
-          </Text>
-          <Text as="p" className="text-[11px] xs: sm:text-[14px] md:text-[16px] lg:text-[18px] font-light text-primary">
-            Address : Lorem ipsum street Block B Number 08, Jakarta, Indonesia, 12345
+            Email : contact.mofier@gmail.com
           </Text>
         </div>
         

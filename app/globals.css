@@ -30,6 +30,11 @@
     @apply w-full mx-auto max-w-[1356px];
 }
 
+/* body {
+  background-color: #FFFDF0;
+} */
+
+
 .swiper-pagination-bullet {
   background-color: #d3d3d3; /* Warna bullet default */
 }

@@ -1,27 +1,52 @@
 "use client";
 
 import Link from 'next/link';
-import React, { useState } from 'react';
+import { usePathname } from 'next/navigation';
+import React, { useState, useEffect } from 'react';
 
 const Header: React.FC = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const pathname = usePathname();
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        setIsVisible(false); // Hide navbar when scrolling down
+      } else {
+        setIsVisible(true); // Show navbar when scrolling up
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <header className="fixed top-0 left-0 w-full bg-white py-4 px-10 shadow z-50">
+    <header 
+      className={`fixed top-0 left-0 w-full bg-white py-4 px-10 shadow z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
+    >
       <div className="container-xs flex py-0.5 justify-between items-center">
         <Link href="/">
           <img src="images/Logo.svg" alt="Logo" className="h-5" />
         </Link>
 
         {/* Desktop Nav Links */}
-        <nav className="hidden sm:flex gap-10 ">
-          <a href="/catalog" className="text-primary font-medium hover:text-secondary">Katalog</a>
-          <a href="/artikel" className="text-primary font-medium hover:text-secondary">Artikel</a>
-          <a href="/about" className="text-primary font-medium hover:text-secondary">Tentang</a>
+        <nav className="hidden sm:flex gap-10">
+          {['/catalog', '/artikel', '/about'].map((route) => (
+            <Link key={route} href={route} className={`font-medium hover:text-secondary ${pathname === route ? 'text-secondary' : 'text-primary'}`}>
+              {route === '/catalog' ? 'Katalog' : route === '/artikel' ? 'Artikel' : 'Tentang'}
+            </Link>
+          ))}
         </nav>
 
         {/* Mobile Menu Icon */}
@@ -45,15 +70,13 @@ const Header: React.FC = () => {
                 &times; {/* Close icon */}
               </button>
               <nav className="flex flex-col gap-6">
-                <Link href="/catalog" onClick={toggleSidebar}>
-                  <span className="text-primary font-medium hover:text-secondary">Katalog</span>
-                </Link>
-                <Link href="/artikel" onClick={toggleSidebar}>
-                  <span className="text-primary font-medium hover:text-secondary">Artikel</span>
-                </Link>
-                <Link href="/about" onClick={toggleSidebar}>
-                  <span className="text-primary font-medium hover:text-secondary">Tentang</span>
-                </Link>
+                {['/catalog', '/artikel', '/about'].map((route) => (
+                  <Link key={route} href={route} onClick={toggleSidebar}>
+                    <span className={`font-medium hover:text-secondary ${pathname === route ? 'text-secondary' : 'text-primary'}`}>
+                      {route === '/catalog' ? 'Katalog' : route === '/artikel' ? 'Artikel' : 'Tentang'}
+                    </span>
+                  </Link>
+                ))}
               </nav>
             </div>
           </div>
